@@ -6,13 +6,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: LexendExa-SemiBold, sans-serif;
+    font-family: 'Lexend Exa', sans-serif;
 }
-/* .logo img{
-    position: relative;
-    margin: 80px 0 40px 80px;
+.logo img{
+    position: absolute;
+    left: 80px;
+    top: 80px;
     z-index: 40;
-} */
+}
 .bajada{
     position: absolute;
     margin: 250px 0 200px 80px;
@@ -25,20 +26,18 @@ header{
     justify-content: space-between;
     /* padding: 40px; */
 }
-
-
 .desk ul{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.836);
     border-radius: 15px;
     bottom: 8%;
     right: 4%;
-    padding: 25px 30px 25px 30px;
+    padding: 10px 30px 10px 30px;
 }
 
 .desk li{
     list-style: none;
-    font-weight: bolder;
+    /* font-weight: bolder; */
     display: block;
     width: auto; /* Opcional, ajusta según sea necesario */
 
@@ -127,7 +126,7 @@ footer .redes-sociales{
 }
 .barramihistoria li{
     list-style: none;  
-    font-weight: bolder;
+    /* font-weight: bolder; */
     display: block;
     width: auto;
     padding: 2px;
@@ -162,17 +161,6 @@ footer .redes-sociales{
 .fondo2{
     background-color: black;
 }
-footer .redes-sociales{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 80px 65px 25px 65px;
-}
-.redes-sociales a{
-    color: white;
-    display: block; /* Agregado para poner los enlaces en columnas */
-    padding: 15px;
-}
 
 /* PROYECTOS */
 
@@ -186,7 +174,7 @@ footer .redes-sociales{
 }
 .barraproyectos li{
     list-style: none;  
-    font-weight: bolder;
+    /* font-weight: bolder; */
     display: block;
     width: auto;
     padding: 2px;
@@ -210,7 +198,7 @@ footer .redes-sociales{
        "branding1 branding2"
        "branding3 branding4" ;
     /* grid-template-rows: repeat(2fr, 300px); */
-    padding: 270px 0 0 80px;
+    padding: 70px 0 0 80px;
     /* grid-template-columns: 1fr 1fr; */
     gap: 15px;
 }
@@ -259,17 +247,6 @@ footer .redes-sociales{
 }
 .fondo3{
     background-color: black;
-}
-footer .redes-sociales{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 80px 65px 25px 65px;
-}
-.redes-sociales a{
-    color: white;
-    display: block; /* Agregado para poner los enlaces en columnas */
-    padding: 15px;
 }
 
 /* MARKET */
@@ -350,7 +327,7 @@ footer .redes-sociales{
 }
 .barraproyectos li{
     list-style: none;  
-    font-weight: bolder;
+    /* font-weight: bolder; */
     display: block;
     width: auto;
     padding: 2px;
@@ -376,17 +353,6 @@ h1 {
 }
 .fondo3{
     background-color: black;
-}
-footer .redes-sociales{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 80px 65px 25px 65px;
-}
-.redes-sociales a{
-    color: white;
-    display: block; /* Agregado para poner los enlaces en columnas */
-    padding: 15px;
 }
 
 /* COLABOREMOS */
