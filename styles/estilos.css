@@ -8,23 +8,47 @@
     box-sizing: border-box;
     font-family: 'Lexend Exa', sans-serif;
 }
-.logo img{
-    position: absolute;
-    left: 80px;
-    top: 80px;
-    z-index: 40;
+.header-main{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    padding-top: 40px;
 }
+.logo img{
+    padding-left: 80px;
+    width: 250px;
+    height: auto;
+    /* position: absolute; */
+    /* left: 80px;
+    top: 80px; */
+    /* z-index: 40; */
+}
+.redes-sociales{
+    padding-right: 40px;
+
+    /* position: absolute;
+    top: 0;
+    right: 0;
+    padding: 80px 65px 25px 65px; */
+}
+.redes-sociales a{
+    color: white;
+    display: block; /* Agregado para poner los enlaces en columnas */
+    padding-bottom: 15px;
+}
+
 .bajada{
-    position: absolute;
-    margin: 250px 0 200px 80px;
+    width: 100%;
+    height: auto;
+    /* position: absolute;
+    margin: 250px 0 200px 80px; */
     color: white;
     font-size: 30px;
-    z-index: 35;
-}
-header{
-    display: flex;
-    justify-content: space-between;
-    /* padding: 40px; */
+    padding-left: 80px;
+    display: block;
+    /* z-index: 35; */
 }
 .desk ul{
     position: fixed;
@@ -94,27 +118,24 @@ header{
         display: none;
     }
 }
-.carouselExampleSlidesOnly{
-    position: fixed;
-    z-index: -90; /* Asegúrate de que el z-index sea menor que el de los demás elementos */
+#indexslider{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    /* position: fixed; */
+    z-index: -9999; /* Asegúrate de que el z-index sea menor que el de los demás elementos */
+    /* overflow: hidden; */
 }
-.carousel-inner, .carousel-item, .carousel-item img{
-    height: 100%;
+.carousel-inner{
+    /* overflow: hidden; */
 }
 .carousel-item img {
     object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor */
-    width: 100%;
-}
-footer .redes-sociales{
-    position: absolute;
-    top: 0;
-    right: 0;
-    padding: 80px 65px 25px 65px;
-}
-.redes-sociales a{
-    color: white;
-    display: block; /* Agregado para poner los enlaces en columnas */
-    padding: 15px;
+    object-position: center top;
+    height: 100vh;
+    /* overflow: hidden; */
 }
 
 /* MI HISTORIA */
@@ -146,15 +167,27 @@ footer .redes-sociales{
 
 /* 2do intento */
 
-.container{
-    width: 75%;
+.containermihistoria{
+    position: absolute;
+    left: 40px;
+    top: 60px;
     display: grid;
+    width: 75%;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
 }
+
 .texthistoria{
     color: white;
     font-size: 170%;
-    text-align: justify;
+    width: 100%;
 }
+
+.foto1 {
+    width: 50%;
+
+}
+
 .fondo2{
     background-color: black;
 }
@@ -341,10 +374,10 @@ footer .redes-sociales{
     justify-content: flex-start;
     height: 0;
 } */
-h1 {
+/* h1 {
     color: white;
     margin-left: 50px;
-}
+} */
 .barraproyectos a:hover{
     color: rgb(109, 109, 109);
 }
