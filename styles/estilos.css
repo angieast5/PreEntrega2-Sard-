@@ -27,7 +27,6 @@
 }
 .redes-sociales{
     padding-right: 40px;
-
     /* position: absolute;
     top: 0;
     right: 0;
@@ -38,7 +37,6 @@
     display: block; /* Agregado para poner los enlaces en columnas */
     padding-bottom: 15px;
 }
-
 .bajada{
     width: 100%;
     height: auto;
@@ -58,7 +56,6 @@
     right: 4%;
     padding: 10px 30px 10px 30px;
 }
-
 .desk li{
     list-style: none;
     /* font-weight: bolder; */
@@ -75,8 +72,6 @@
 .desk a:hover{
     color: rgb(109, 109, 109);
 }
-
-
 .mobile{
     display: flex;
     position: absolute;
@@ -129,7 +124,7 @@
     /* overflow: hidden; */
 }
 .carousel-inner{
-    /* overflow: hidden; */
+    overflow: hidden;
 }
 .carousel-item img {
     object-fit: cover; /* Esto asegura que la imagen cubra completamente el contenedor */
@@ -168,27 +163,38 @@
 /* 2do intento */
 
 .containermihistoria{
-    position: absolute;
-    left: 40px;
-    top: 60px;
-    display: grid;
-    width: 75%;
-    grid-template-columns: 1fr 1fr;
-    gap: 10px;
+    max-width: 1224px;
+    width: 90%;
+    padding: 40px 0 0 80px;
 }
-
+.collegemihistoria{
+    display: flex;
+    gap: 20px;
+}
+.columna1historia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
 .texthistoria{
     color: white;
-    font-size: 170%;
+    /* font-size: 30px; */
+    /* width: auto; */
+}
+.foto1 img{
     width: 100%;
+    height: 100%;
+    
+    object-fit: cover;
 }
 
-.foto1 {
-    width: 50%;
-
+@media screen and (max-width:768px) {
+    .collegemihistoria {
+        flex-direction: column;
+    }
 }
 
-.fondo2{
+.fondo1{
     background-color: black;
 }
 
