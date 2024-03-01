@@ -17,7 +17,7 @@
     padding-top: 40px;
 }
 .logo img{
-    padding-left: 80px;
+    padding-left: 50px;
     width: 250px;
     height: auto;
     /* position: absolute; */
@@ -27,6 +27,7 @@
 }
 .redes-sociales{
     padding-right: 40px;
+
     /* position: absolute;
     top: 0;
     right: 0;
@@ -44,10 +45,14 @@
     margin: 250px 0 200px 80px; */
     color: white;
     font-size: 30px;
-    padding-left: 80px;
+    padding-left: 50px;
+    padding-top: 30px;
     display: block;
     /* z-index: 35; */
 }
+
+/* DESK */
+
 .desk ul{
     position: fixed;
     background-color: rgba(0, 0, 0, 0.836);
@@ -66,49 +71,97 @@
 .desk a{
     color: white;
     text-decoration: none;
-    font-size: 50px;
+    font-size: 40px;
     transition: 0.5s;
 }
 .desk a:hover{
     color: rgb(109, 109, 109);
 }
-.mobile{
-    display: flex;
-    position: absolute;
-    justify-content: center;
-    /* display: flex;
-    flex-flow: row wrap;
-    justify-content: center; */
+
+/* MOBILE */
+
+.navbar-toggler{
+    /* text-align: center; */
+    width: 100%;
+    max-width: 100%;
+    margin: 0 auto;
+    border: none;
 }
-.mobile ul{
-    /* position: fixed; */
-    background-color: rgba(0, 0, 0, 0.836);
+.navbar{
     border-radius: 10px;
-    /* bottom: 8%;
-    right: 4%; */
-    padding: 10px 20px 10px 15px;
 }
+.bg-black{
+    margin-bottom: 5px;
+    border-radius: 10px;
+    background-color: black;
+}
+.navbar-toggler:focus{
+    box-shadow: none;
+}
+.navbar-toggler:focus-visible{
+    background-color: rgb(146, 146, 146);
+}
+.mobile{
+    position: absolute;
+    bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    /* display: flex; */
+    /* justify-content: center; */
+    width: 100%;
+    /* padding-bottom: 30px; */
+    /* visibility: visible; */
+}
+
+.mobile ul{
+    display: block;
+    margin: 0;
+    padding: 0;
+    /* margin-bottom: 30px; */
+    /* background-color: rgba(0, 0, 0, 0.836); */
+    /* border-radius: 10px; */
+    /* padding: 10px 20px; */
+}
+.mobile.nav{
+    display: flex;
+    align-items: center;
+}
+/* .nav.visible{
+    visibility: visible;
+} */
 .mobile li{
     list-style: none;
     text-align: center;
-    /* font-weight: bolder; */
 }
 .mobile a{
     color: white;
     text-decoration: none;
-    font-size: 30px;
+    font-size: 20px;
     transition: 0.5s;
 }
 .mobile a:hover{
     color: rgb(109, 109, 109);
 }
+/* .abrir-menu{
+    display: none;
+} */
 
 @media screen and (max-width:768px) {
+    .logo img{
+    width: 40%;
+    }
     .desk{
         display: none;
     }
+        /* .abrir-menu,
+    .cerrar-menu{
+        display: block;
+    } */
+    .bajada{
+        font-size: 22px;
+    }
 }
-@media screen and (min-width:769px) {
+@media screen and (min-width:769px) {    
     .mobile{
         display: none;
     }
@@ -163,18 +216,19 @@
 /* 2do intento */
 
 .containermihistoria{
-    max-width: 1224px;
-    width: 90%;
-    padding: 40px 0 0 80px;
-}
-.collegemihistoria{
+    max-width: 1300px;
+    /* position: absolute; */
+    /* justify-content: left; */
+    /* width: 90%; */
     display: flex;
     gap: 20px;
+    padding: 40px 80px 0 80px;
 }
 .columna1historia{
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 50%;
 }
 .texthistoria{
     color: white;
@@ -184,13 +238,15 @@
 .foto1 img{
     width: 100%;
     height: 100%;
-    
-    object-fit: cover;
+    /* object-fit: cover; */
 }
 
 @media screen and (max-width:768px) {
-    .collegemihistoria {
+    .containermihistoria {
         flex-direction: column;
+    }
+    .columna1historia{
+        width: 100%;
     }
 }
 
@@ -225,7 +281,8 @@
     color: white;
     font-size: 40px;
     border-radius: 50px;
-    padding: 400px 0 0 80px;
+    margin: 100px 0 0 80px;
+    /* padding: 400px 0 0 80px; */
 }
 .containerbranding {
     width: 75%;
@@ -234,34 +291,34 @@
        "branding1 branding2"
        "branding3 branding4" ;
     /* grid-template-rows: repeat(2fr, 300px); */
-    padding: 70px 0 0 80px;
+    padding: 40px 0 0 80px;
     /* grid-template-columns: 1fr 1fr; */
     gap: 15px;
 }
 .branding1 img {
     grid-area: branding1;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     max-width: 100%;
 }
 
 .branding2 img {
     grid-area: branding2;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     max-width: 100%;
 }
 
 .branding3 img {
     grid-area: branding3;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     max-width: 100%;
 }
 
 .branding4 img {
     grid-area: branding4;
-    padding: 10px;
+    /* padding: 10px; */
     text-align: center;
     max-width: 100%;
 }
@@ -288,14 +345,14 @@
 /* MARKET */
 
 .merch{
-    height: 500px;
+    /* height: 500px; */
     width: 100%;
     background-color: black;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
-    margin-right: 500px;
-    margin-top: 280px;
+    /* margin-right: 500px; */
+    margin-top: 30px;
     align-self: start;
     /* max-width: 80%; */
 }
@@ -394,21 +451,23 @@
 /* COLABOREMOS */
 
 .formulariocompleto{
-    padding-top: 250px;
+    max-width: 1300px;
+    padding-top: 20px;
+    padding: 40px 80px 0 80px;
 }
 
 .formulario-container{
     text-decoration: none;
     color: white;
     font-size: 25px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     margin-bottom: 40px;
 }
 .colaboremos-formulario{
     font-size: 50px;
     color: white;
     border-radius: 10px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
     margin-top: 70px;
     margin-bottom: 30px;
 
@@ -420,5 +479,5 @@
     text-decoration: none;
     color: white;
     font-size: 20px;
-    margin-left: 300px;
+    /* margin-left: 300px; */
 }
