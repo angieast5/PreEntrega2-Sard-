@@ -200,9 +200,6 @@
 }
 
 @media screen and (max-width:768px) {
-    .containermihistoria {
-        /* display: none; */
-    }
     .columna1historia,
     .columna3historia {
         display: none;
