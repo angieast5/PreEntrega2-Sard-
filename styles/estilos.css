@@ -178,11 +178,18 @@
     gap: 20px;
     padding: 40px 80px 0 80px;
 }
-.columna1historia{
+.columna1historia,
+.columna3historia{
     display: flex;
     flex-direction: column;
     gap: 20px;
     width: 50%;
+}
+
+.columna2historia{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
 }
 .texthistoria{
     color: white;
@@ -194,10 +201,16 @@
 
 @media screen and (max-width:768px) {
     .containermihistoria {
-        flex-direction: column;
+        /* display: none; */
     }
-    .columna1historia{
-        width: 100%;
+    .columna1historia,
+    .columna3historia {
+        display: none;
+    }
+}
+@media screen and (min-width:769px){
+    .columna2historia {
+        display: none;
     }
 }
 
@@ -364,7 +377,7 @@
         font-size: 30px;
     }
     .contacto-letragordita a{
-        font-size: 13px
+        font-size: 10px
     }
 }
 @media screen and (min-width:769px){
