@@ -301,56 +301,53 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		background-color: map-get($colores, color-primario);
 		text-align: start;
 		border-radius: 15px;
-
+		.titulo {
+			padding: 0;
+			margin: 0;
+			display: flex;
+			justify-content: flex-start;
+			font-size: 30px;
+			padding: 15px 0 0 20px;
+			font-weight: bold;
+		}
+	
+		.precio {
+			padding: 0;
+			margin: 0;
+			font-size: 25px;
+			padding-left: 20px;
+		}
 	}
 
-	.titulo {
-		padding: 0;
-		margin: 0;
-		display: flex;
-		justify-content: flex-start;
-		font-size: 30px;
-		padding: 15px 0 0 20px;
-		font-weight: bold;
+	.imagenmerch {
+		background-position: center;
+		background-size: cover;
+		height: 200px;
+		width: 100%;
+		border-radius: 15px 15px 0 0;
 	}
-
-	.precio {
-		padding: 0;
-		margin: 0;
-		font-size: 25px;
-		padding-left: 20px;
+	.teclado {
+		background-image: url(../img/Sticker\ de\ Teclado.webp);
 	}
-}
-
-.imagenmerch {
-	background-position: center;
-	background-size: cover;
-	height: 200px;
-	width: 100%;
-	border-radius: 15px 15px 0 0;
-}
-
-.teclado {
-	background-image: url(../img/Sticker\ de\ Teclado.webp);
-}
-
-.separador {
-	background-image: url(../img/Separadores.webp);
-}
-
-.libretas {
-	background-image: url(../img/Libretas.webp);
-}
-
-.tazas {
-	background-image: url(../img/Tazas.webp);
-	background-position: top;
-}
-
-.posavasos {
-	background-image: url(../img/Posavasos\ desordenado.webp);
-	background-position: top;
-
+	
+	.separador {
+		background-image: url(../img/Separadores.webp);
+	}
+	
+	.libretas {
+		background-image: url(../img/Libretas.webp);
+	}
+	
+	.tazas {
+		background-image: url(../img/Tazas.webp);
+		background-position: top;
+	}
+	
+	.posavasos {
+		background-image: url(../img/Posavasos\ desordenado.webp);
+		background-position: top;
+	
+	}
 }
 
 .formulariocompleto {
