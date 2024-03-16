@@ -1,13 +1,11 @@
-$color_1: white;
-$color_2: rgb(109, 109, 109);
 $font-family_1: 'Lexend Exa', sans-serif;
-$background-color_1: rgba(0, 0, 0, 0.836);
-$background-color_2: rgba(255, 255, 255, 0.8);
-$background-color_3: rgb(146, 146, 146);
-$background-color_4: black;
-$background-color_5: rgb(255, 255, 255);
 
 @import "https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@600;900&display=swap";
+@import 'utilities/maps';
+@import 'base/generales';
+@import 'base/variables';
+@import 'utilities/mixins';
+
 
 * {
 	margin: 0;
@@ -17,9 +15,7 @@ $background-color_5: rgb(255, 255, 255);
 }
 
 .header-main {
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
+	@include flex (flex, space-between, center);
 	width: 100%;
 	height: 200px;
 	padding-top: 40px;
@@ -35,9 +31,8 @@ $background-color_5: rgb(255, 255, 255);
 
 .redes-sociales {
 	padding-right: 40px;
-
 	a {
-		color: $color_1;
+		color: map-get($colores, color-primario);
 		display: block;
 		padding-bottom: 15px;
 	}
@@ -46,47 +41,50 @@ $background-color_5: rgb(255, 255, 255);
 .bajada {
 	width: 100%;
 	height: auto;
-	color: $color_1;
+	color: map-get($colores, color-primario);
 	font-size: 30px;
-	padding-left: 50px;
-	padding-top: 20px;
+	padding: 20px 0 0 50px;
 	display: block;
 }
 
 .desk {
 	ul {
 		position: fixed;
-		background-color: $background-color_1;
+		background-color: map-get($colores, color-inicio);
 		border-radius: 15px;
 		bottom: 8%;
 		right: 4%;
 		padding: 10px 30px 10px 30px;
-	}
-
-	li {
-		list-style: none;
-		display: block;
-		width: auto;
-	}
-
-	a {
-		color: $color_1;
-		text-decoration: none;
-		font-size: 43px;
-		transition: 0.5s;
-
-		&:hover {
-			color: $color_2;
+		li {
+			list-style: none;
+			display: block;
+			width: auto;
+			a {
+				color: map-get($colores, color-primario);
+				text-decoration: none;
+				font-size: 43px;
+				transition: 0.5s;
+		
+				&:hover {
+					color: map-get($colores, color-click);
+				}
+				&.active{
+					color: map-get($colores, color-active);
+				}
+			}
 		}
 	}
-
 	.subpaginas {
 		a {
 			text-decoration: none;
 			font-size: 30px;
 			left: 40px;
-			margin-left: 30px;
+			// margin-left: 30px;
+
 		}
+	}
+	.subpagina:hover{
+		translate:(30px);
 	}
 
 }
@@ -94,71 +92,59 @@ $background-color_5: rgb(255, 255, 255);
 .mobile {
 	position: fixed;
 	bottom: 60px;
-	padding-left: 60px;
-	padding-right: 60px;
+	padding: 0 60px 0 60px;
 	width: 100%;
-
 	ul {
 		display: block;
 		margin: 0;
 		padding: 0;
+		li {
+			list-style: none;
+			text-align: center;
+		}
 	}
-
-	li {
-		list-style: none;
-		text-align: center;
-	}
-
 	.subpaginasmobile {
 		display: flex;
 		justify-content: space-evenly;
 		text-align: center;
-
 		a {
 			font-size: 16px;
 		}
 	}
-
 	a {
-		color: $color_1;
+		color: map-get($colores, color-primario);
 		text-decoration: none;
 		font-size: 25px;
 		transition: 0.5s;
-
 		&:hover {
-			color: $color_2;
+			color: map-get($colores, color-click);
 		}
 	}
 }
+
 .navbar-toggler {
 	width: 100%;
 	max-width: 100%;
 	margin: 0 auto;
 	border: none;
-
 	&:focus {
 		box-shadow: none;
 	}
-
 	&:focus-visible {
-		background-color: $background-color_3;
+		background-color: map-get($colores , color-click);
 	}
 }
 
 .bg-black {
-	margin-bottom: 10px;
-	border-radius: 10px;
-	opacity: 90%;
+	@include margin-border(10px, 10px, 90%);
 }
 
 .bg-dark {
-	margin-bottom: 10px;
-	border-radius: 10px;
-	opacity: 95%;
+	@include margin-border(10px, 10px, 90%);
 }
 
 .navbar-opacity {
-	background-color: $background-color_2;
+	background-color: map-get($colores, color-inicio);
 }
 
 #indexslider {
@@ -168,8 +154,10 @@ $background-color_5: rgb(255, 255, 255);
 	width: 100%;
 	height: 100vh;
 	z-index: -9999;
+
 	.carousel-inner {
 		overflow: hidden;
+
 		.carousel-item {
 			img {
 				object-fit: cover;
@@ -185,25 +173,21 @@ $background-color_5: rgb(255, 255, 255);
 	display: flex;
 	gap: 20px;
 	padding: 40px 80px 0 80px;
-	.columna1historia {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		width: 50%;
-	}
-	.columna3historia {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-		width: 50%;
-	}
-	.columna2historia {
-		display: flex;
-		flex-direction: column;
-		gap: 20px;
-	}
 }
 
+.columna1historia {
+	@include flex-imagen (flex, column, 20px, 50%);
+}
+
+.columna3historia {
+	@include flex-imagen (flex, column, 20px, 50%);
+}
+
+.columna2historia {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
 
 .foto1 {
 	img {
@@ -212,102 +196,101 @@ $background-color_5: rgb(255, 255, 255);
 	}
 
 	h1 {
-		color: $color_1;
+		color: map-get($colores, color-primario);
 	}
 
 	h2 {
-		color: $color_1;
+		color: map-get($colores, color-primario);
 	}
 
 	.texthistoria {
-		color: $color_1;
+		color: map-get($colores, color-primario);
 	}
 }
 
 .fondo1 {
-	background-color: $background-color_4;
+	background-color: map-get($colores, color-fondo);
 }
 
 .titulobranding {
-	color: $color_1;
+	color: map-get($colores, color-primario);
 	font-size: 40px;
 	border-radius: 50px;
 	margin: 100px 0 0 80px;
-	.containerbranding {
-		width: 75%;
-		display: grid;
-		grid-template-columns: repeat(2, 1fr);
-		grid-template-rows: auto;
-		padding: 40px 0 0 80px;
-		gap: 15px;
-	
-		.branding1 {
-			img {
-				width: 100%;
-				text-align: center;
-			}
-	
-			:hover {
-				transform: scale(1.02);
-			}
+}
+
+.containerbranding {
+	width: 75%;
+	display: grid;
+	grid-template-columns: repeat(2, 1fr);
+	grid-template-rows: auto;
+	padding: 40px 0 0 80px;
+	gap: 15px;
+
+	.branding1 {
+		img {
+			width: 100%;
+			text-align: center;
 		}
-	
-		.branding2 {
-			img {
-				width: 100%;
-				text-align: center;
-			}
-	
-			:hover {
-				transform: scale(1.02);
-			}
-		}
-	
-		.branding3 {
-			img {
-				width: 100%;
-				text-align: center;
-			}
-	
-			:hover {
-				transform: scale(1.02);
-			}
-		}
-	
-		.branding4 {
-			img {
-				width: 100%;
-				text-align: center;
-			}
-	
-			:hover {
-				transform: scale(1.02);
-			}
-		}
-	
-		.branding5 {
-			img {
-				width: 100%;
-				text-align: center;
-			}
-	
-			:hover {
-				transform: scale(1.02);
-			}
+
+		&:hover {
+			transform: scale(1.02);
 		}
 	}
-	
+
+	.branding2 {
+		img {
+			width: 100%;
+			text-align: center;
+		}
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	.branding3 {
+		img {
+			width: 100%;
+			text-align: center;
+		}
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	.branding4 {
+		img {
+			width: 100%;
+			text-align: center;
+		}
+		
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
+
+	.branding5 {
+		img {
+			width: 100%;
+			text-align: center;
+		}
+
+		&:hover {
+			transform: scale(1.02);
+		}
+	}
 }
 
 .fondo3 {
-	background-color: $background-color_4;
+	background-color: map-get($colores, color-fondo);
 }
 
 .merch {
 	width: 70%;
-	background-color: $background-color_4;
-	margin-left: 50px;
-	margin-top: 30px;
+	background-color: map-get($colores, color-inicio);
+	margin: 30px 0 0 50px;
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
@@ -316,7 +299,7 @@ $background-color_5: rgb(255, 255, 255);
 	.productomerch {
 		width: 100%;
 		height: 300px;
-		background-color: $background-color_5;
+		background-color: map-get($colores, color-primario);
 		text-align: start;
 		border-radius: 15px;
 
@@ -327,9 +310,8 @@ $background-color_5: rgb(255, 255, 255);
 		margin: 0;
 		display: flex;
 		justify-content: flex-start;
-		padding-left: 20px;
 		font-size: 30px;
-		padding-top: 15px;
+		padding: 15px 0 0 20px;
 		font-weight: bold;
 	}
 
@@ -375,27 +357,30 @@ $background-color_5: rgb(255, 255, 255);
 .formulariocompleto {
 	max-width: 900px;
 	padding-top: 20px;
-	padding: 40px 80px 0 80px;
+	padding: 35px 60px 0 80px;
+
+	a {
+		text-decoration: none;
+		color: map-get($colores, color-primario);
+		font-size: 20px;
+	}
 }
 
+button:hover{
+	transform: scale(1.03);
+}
 .colaboremos-formulario {
 	font-size: 50px;
-	color: $color_1;
+	color: map-get($colores, color-primario);
 	border-radius: 10px;
-	margin-top: 70px;
-	margin-bottom: 30px;
+	margin: 70px 0 30px 0;
 }
-
 .contacto-letragordita {
 	margin-top: 50px;
 	padding-bottom: 50px;
 
-	a {
-		text-decoration: none;
-		color: $color_1;
-		font-size: 20px;
-	}
 }
+
 
 @media screen and (max-width:980px) {
 	.logo {
@@ -431,14 +416,15 @@ $background-color_5: rgb(255, 255, 255);
 	.titulo {
 		font-size: 27px;
 	}
-
+	.formulariocompleto {
+		padding: 35px 60px 0 50px;
+	}
 	.colaboremos-formulario {
 		font-size: 30px;
 	}
-
 	.contacto-letragordita {
 		a {
-			font-size: 12px;
+			font-size: 13px;
 		}
 	}
 }

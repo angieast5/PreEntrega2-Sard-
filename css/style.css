@@ -8,8 +8,8 @@
 
 .header-main {
   display: flex;
-  align-items: center;
   justify-content: space-between;
+  align-items: center;
   width: 100%;
   height: 200px;
   padding-top: 40px;
@@ -35,8 +35,7 @@
   height: auto;
   color: white;
   font-size: 30px;
-  padding-left: 50px;
-  padding-top: 20px;
+  padding: 20px 0 0 50px;
   display: block;
 }
 
@@ -48,61 +47,36 @@
   right: 4%;
   padding: 10px 30px 10px 30px;
 }
-.desk li {
+.desk ul li {
   list-style: none;
   display: block;
   width: auto;
 }
-.desk a {
+.desk ul li a {
   color: white;
   text-decoration: none;
   font-size: 43px;
   transition: 0.5s;
 }
-.desk a:hover {
+.desk ul li a:hover {
   color: rgb(109, 109, 109);
+}
+.desk ul li a.active {
+  color: rgb(255, 22, 61);
 }
 .desk .subpaginas a {
   text-decoration: none;
   font-size: 30px;
   left: 40px;
-  margin-left: 30px;
 }
-
-.navbar-toggler {
-  width: 100%;
-  max-width: 100%;
-  margin: 0 auto;
-  border: none;
-}
-.navbar-toggler:focus {
-  box-shadow: none;
-}
-.navbar-toggler:focus-visible {
-  background-color: rgb(146, 146, 146);
-}
-
-.bg-black {
-  margin-bottom: 10px;
-  border-radius: 10px;
-  opacity: 90%;
-}
-
-.bg-dark {
-  margin-bottom: 10px;
-  border-radius: 10px;
-  opacity: 95%;
-}
-
-.navbar-opacity {
-  background-color: rgba(255, 255, 255, 0.8);
+.desk .subpagina:hover {
+  translate: 30px;
 }
 
 .mobile {
   position: fixed;
   bottom: 60px;
-  padding-left: 60px;
-  padding-right: 60px;
+  padding: 0 60px 0 60px;
   width: 100%;
 }
 .mobile ul {
@@ -110,7 +84,7 @@
   margin: 0;
   padding: 0;
 }
-.mobile li {
+.mobile ul li {
   list-style: none;
   text-align: center;
 }
@@ -132,6 +106,35 @@
   color: rgb(109, 109, 109);
 }
 
+.navbar-toggler {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  border: none;
+}
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+.navbar-toggler:focus-visible {
+  background-color: rgb(109, 109, 109);
+}
+
+.bg-black {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+.bg-dark {
+  margin-bottom: 10px;
+  border-radius: 10px;
+  opacity: 90%;
+}
+
+.navbar-opacity {
+  background-color: rgba(0, 0, 0, 0.836);
+}
+
 #indexslider {
   position: absolute;
   top: 0;
@@ -140,12 +143,10 @@
   height: 100vh;
   z-index: -9999;
 }
-
-.carousel-inner {
+#indexslider .carousel-inner {
   overflow: hidden;
 }
-
-.carousel-item img {
+#indexslider .carousel-inner .carousel-item img {
   object-fit: cover;
   object-position: center top;
   height: 100vh;
@@ -192,12 +193,6 @@
   color: white;
 }
 
-.gradiente {
-  width: 1920px;
-  height: 400px;
-  background-image: linear-gradient(to right black, red);
-}
-
 .fondo1 {
   background-color: black;
 }
@@ -217,44 +212,39 @@
   padding: 40px 0 0 80px;
   gap: 15px;
 }
-
-.branding1 img {
+.containerbranding .branding1 img {
   width: 100%;
   text-align: center;
 }
-.branding1 :hover {
+.containerbranding .branding1:hover {
   transform: scale(1.02);
 }
-
-.branding2 img {
+.containerbranding .branding2 img {
   width: 100%;
   text-align: center;
 }
-.branding2 :hover {
+.containerbranding .branding2:hover {
   transform: scale(1.02);
 }
-
-.branding3 img {
+.containerbranding .branding3 img {
   width: 100%;
   text-align: center;
 }
-.branding3 :hover {
+.containerbranding .branding3:hover {
   transform: scale(1.02);
 }
-
-.branding4 img {
+.containerbranding .branding4 img {
   width: 100%;
   text-align: center;
 }
-.branding4 :hover {
+.containerbranding .branding4:hover {
   transform: scale(1.02);
 }
-
-.branding5 img {
+.containerbranding .branding5 img {
   width: 100%;
   text-align: center;
 }
-.branding5 :hover {
+.containerbranding .branding5:hover {
   transform: scale(1.02);
 }
 
@@ -264,9 +254,8 @@
 
 .merch {
   width: 70%;
-  background-color: black;
-  margin-left: 50px;
-  margin-top: 30px;
+  background-color: rgba(0, 0, 0, 0.836);
+  margin: 30px 0 0 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -275,7 +264,7 @@
 .merch .productomerch {
   width: 100%;
   height: 300px;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
   text-align: start;
   border-radius: 15px;
 }
@@ -284,9 +273,8 @@
   margin: 0;
   display: flex;
   justify-content: flex-start;
-  padding-left: 20px;
   font-size: 30px;
-  padding-top: 15px;
+  padding: 15px 0 0 20px;
   font-weight: bold;
 }
 .merch .precio {
@@ -329,25 +317,28 @@
 .formulariocompleto {
   max-width: 900px;
   padding-top: 20px;
-  padding: 40px 80px 0 80px;
+  padding: 35px 60px 0 80px;
+}
+.formulariocompleto a {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+}
+
+button:hover {
+  transform: scale(1.03);
 }
 
 .colaboremos-formulario {
   font-size: 50px;
   color: white;
   border-radius: 10px;
-  margin-top: 70px;
-  margin-bottom: 30px;
+  margin: 70px 0 30px 0;
 }
 
 .contacto-letragordita {
   margin-top: 50px;
   padding-bottom: 50px;
-}
-.contacto-letragordita a {
-  text-decoration: none;
-  color: white;
-  font-size: 20px;
 }
 
 @media screen and (max-width: 980px) {
@@ -375,11 +366,14 @@
   .titulo {
     font-size: 27px;
   }
+  .formulariocompleto {
+    padding: 35px 60px 0 50px;
+  }
   .colaboremos-formulario {
     font-size: 30px;
   }
   .contacto-letragordita a {
-    font-size: 12px;
+    font-size: 13px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {

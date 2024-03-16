@@ -1,0 +1,17 @@
+@mixin flex ($display, $justify, $align){
+    display: $display;
+    justify-content: $justify;
+    align-items: $align;
+}
+
+@mixin flex-imagen($display, $direction, $gap, $width){
+    display: $display;
+    flex-direction: $direction;
+    gap: $gap;
+    width: $width;
+}
+@mixin margin-border($margin, $border, $opacity){
+    margin-bottom: $margin;
+    border-radius: $border;
+    opacity: $opacity;
+}
