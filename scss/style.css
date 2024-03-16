@@ -24,7 +24,6 @@
 .redes-sociales {
   padding-right: 40px;
 }
-
 .redes-sociales a {
   color: white;
   display: block;
@@ -48,34 +47,28 @@
   right: 4%;
   padding: 10px 30px 10px 30px;
 }
-
 .desk ul li {
   list-style: none;
   display: block;
   width: auto;
 }
-
 .desk ul li a {
   color: white;
   text-decoration: none;
   font-size: 43px;
   transition: 0.5s;
 }
-
 .desk ul li a:hover {
   color: rgb(109, 109, 109);
 }
-
 .desk ul li a.active {
   color: rgb(255, 22, 61);
 }
-
 .desk .subpaginas a {
   text-decoration: none;
   font-size: 30px;
   left: 40px;
 }
-
 .desk .subpagina:hover {
   translate: 30px;
 }
@@ -86,35 +79,29 @@
   padding: 0 60px 0 60px;
   width: 100%;
 }
-
 .mobile ul {
   display: block;
   margin: 0;
   padding: 0;
 }
-
 .mobile ul li {
   list-style: none;
   text-align: center;
 }
-
 .mobile .subpaginasmobile {
   display: flex;
   justify-content: space-evenly;
   text-align: center;
 }
-
 .mobile .subpaginasmobile a {
   font-size: 16px;
 }
-
 .mobile a {
   color: white;
   text-decoration: none;
   font-size: 25px;
   transition: 0.5s;
 }
-
 .mobile a:hover {
   color: rgb(109, 109, 109);
 }
@@ -125,11 +112,9 @@
   margin: 0 auto;
   border: none;
 }
-
 .navbar-toggler:focus {
   box-shadow: none;
 }
-
 .navbar-toggler:focus-visible {
   background-color: rgb(109, 109, 109);
 }
@@ -158,16 +143,14 @@
   height: 100vh;
   z-index: -9999;
 }
-
 #indexslider .carousel-inner {
   overflow: hidden;
 }
-
 #indexslider .carousel-inner .carousel-item img {
   -o-object-fit: cover;
-  object-fit: cover;
+     object-fit: cover;
   -o-object-position: center top;
-  object-position: center top;
+     object-position: center top;
   height: 100vh;
 }
 
@@ -202,15 +185,12 @@
   width: 100%;
   height: 100%;
 }
-
 .foto1 h1 {
   color: white;
 }
-
 .foto1 h2 {
   color: white;
 }
-
 .foto1 .texthistoria {
   color: white;
 }
@@ -234,48 +214,38 @@
   padding: 40px 0 0 80px;
   gap: 15px;
 }
-
 .containerbranding .branding1 img {
   width: 100%;
   text-align: center;
 }
-
 .containerbranding .branding1:hover {
   transform: scale(1.02);
 }
-
 .containerbranding .branding2 img {
   width: 100%;
   text-align: center;
 }
-
 .containerbranding .branding2:hover {
   transform: scale(1.02);
 }
-
 .containerbranding .branding3 img {
   width: 100%;
   text-align: center;
 }
-
 .containerbranding .branding3:hover {
   transform: scale(1.02);
 }
-
 .containerbranding .branding4 img {
   width: 100%;
   text-align: center;
 }
-
 .containerbranding .branding4:hover {
   transform: scale(1.02);
 }
-
 .containerbranding .branding5 img {
   width: 100%;
   text-align: center;
 }
-
 .containerbranding .branding5:hover {
   transform: scale(1.02);
 }
@@ -293,7 +263,6 @@
   grid-template-rows: auto;
   gap: 40px;
 }
-
 .merch .productomerch {
   width: 100%;
   height: 300px;
@@ -301,7 +270,6 @@
   text-align: start;
   border-radius: 15px;
 }
-
 .merch .titulo {
   padding: 0;
   margin: 0;
@@ -311,7 +279,6 @@
   padding: 15px 0 0 20px;
   font-weight: bold;
 }
-
 .merch .precio {
   padding: 0;
   margin: 0;
@@ -354,7 +321,6 @@
   padding-top: 20px;
   padding: 35px 60px 0 80px;
 }
-
 .formulariocompleto a {
   text-decoration: none;
   color: white;
@@ -427,6 +393,4 @@ button:hover {
   .columna2historia {
     display: none;
   }
-} 
-
-/*# sourceMappingURL=style.css.map */
+}/*# sourceMappingURL=style.css.map */
