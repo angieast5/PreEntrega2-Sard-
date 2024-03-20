@@ -118,6 +118,9 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		&:hover {
 			color: map-get($colores, color-click);
 		}
+		&.active{
+			color: map-get($colores, color-active);
+		}
 	}
 }
 

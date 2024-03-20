@@ -105,6 +105,9 @@
 .mobile a:hover {
   color: rgb(109, 109, 109);
 }
+.mobile a.active {
+  color: rgb(255, 22, 61);
+}
 
 .navbar-toggler {
   width: 100%;
