@@ -34,6 +34,10 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		color: map-get($colores, color-primario);
 		display: block;
 		padding-bottom: 15px;
+		&:hover {
+			color: map-get($colores, color-active);
+			transition: 0.5s;
+		}
 	}
 }
 
@@ -41,6 +45,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	width: 100%;
 	height: auto;
 	color: map-get($colores, color-primario);
+	text-shadow: map-get($colores, color-fondo);
 	font-size: 30px;
 	padding: 20px 0 0 50px;
 	display: block;
@@ -50,6 +55,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	ul {
 		position: fixed;
 		background-color: map-get($colores, color-inicio);
+		backdrop-filter: blur(5px);
 		border-radius: 15px;
 		bottom: 8%;
 		right: 4%;
@@ -78,12 +84,12 @@ $font-family_1: 'Lexend Exa', sans-serif;
 			text-decoration: none;
 			font-size: 30px;
 			left: 40px;
-			// margin-left: 30px;
 
 		}
 	}
 	.subpagina:hover{
 		translate:(30px);
+		transition: 0.5s;
 	}
 
 }
@@ -125,6 +131,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 }
 
 .navbar-toggler {
+	
 	width: 100%;
 	max-width: 100%;
 	margin: 0 auto;
@@ -139,6 +146,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 
 .bg-black {
 	@include margin-border(10px, 10px, 90%);
+	
 }
 
 .bg-dark {
@@ -146,6 +154,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 }
 
 .navbar-opacity {
+	backdrop-filter: blur(5px);
 	background-color: map-get($colores, color-inicio);
 }
 
@@ -210,18 +219,25 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	}
 }
 
-.fondo1 {
+.fondo {
 	background-color: map-get($colores, color-fondo);
 }
 
-.titulobranding {
+.subtituloproyecto {
 	color: map-get($colores, color-primario);
 	font-size: 40px;
 	border-radius: 50px;
 	margin: 100px 0 0 80px;
 }
 
-.containerbranding {
+.parrafoproyecto{
+	width: 60%;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 18px;
+}
+
+.containerpackaging {
 	width: 75%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -229,7 +245,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	padding: 40px 0 0 80px;
 	gap: 15px;
 
-	.branding1 {
+	.packaging1 {
 		img {
 			width: 100%;
 			text-align: center;
@@ -240,7 +256,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		}
 	}
 
-	.branding2 {
+	.packaging2 {
 		img {
 			width: 100%;
 			text-align: center;
@@ -251,7 +267,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		}
 	}
 
-	.branding3 {
+	.packaging3 {
 		img {
 			width: 100%;
 			text-align: center;
@@ -262,7 +278,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		}
 	}
 
-	.branding4 {
+	.packaging4 {
 		img {
 			width: 100%;
 			text-align: center;
@@ -273,7 +289,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		}
 	}
 
-	.branding5 {
+	.packaging5 {
 		img {
 			width: 100%;
 			text-align: center;
@@ -285,9 +301,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	}
 }
 
-.fondo3 {
-	background-color: map-get($colores, color-fondo);
-}
+
 
 .merch {
 	width: 70%;
@@ -365,6 +379,10 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	}
 }
 
+p{
+	color: map-get($colores, color-primario);
+}
+
 button:hover{
 	transform: scale(1.03);
 }
@@ -403,8 +421,17 @@ button:hover{
 	.columna3historia {
 		display: none;
 	}
-
-	.containerbranding {
+	.subtituloproyecto {
+		color: map-get($colores, color-primario);
+		font-size: 35px;
+	}
+	.parrafoproyecto{
+		width: 60%;
+		margin-left: 80px;
+		margin-top: 20px;
+		font-size: 13px;
+	}
+	.containerpackaging {
 		grid-template-columns: 1fr;
 	}
 

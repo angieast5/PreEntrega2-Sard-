@@ -29,11 +29,16 @@
   display: block;
   padding-bottom: 15px;
 }
+.redes-sociales a:hover {
+  color: rgb(255, 22, 61);
+  transition: 0.5s;
+}
 
 .bajada {
   width: 100%;
   height: auto;
   color: white;
+  text-shadow: black;
   font-size: 30px;
   padding: 20px 0 0 50px;
   display: block;
@@ -42,6 +47,7 @@
 .desk ul {
   position: fixed;
   background-color: rgba(0, 0, 0, 0.836);
+  backdrop-filter: blur(5px);
   border-radius: 15px;
   bottom: 8%;
   right: 4%;
@@ -71,6 +77,7 @@
 }
 .desk .subpagina:hover {
   translate: 30px;
+  transition: 0.5s;
 }
 
 .mobile {
@@ -135,6 +142,7 @@
 }
 
 .navbar-opacity {
+  backdrop-filter: blur(5px);
   background-color: rgba(0, 0, 0, 0.836);
 }
 
@@ -196,18 +204,25 @@
   color: white;
 }
 
-.fondo1 {
+.fondo {
   background-color: black;
 }
 
-.titulobranding {
+.subtituloproyecto {
   color: white;
   font-size: 40px;
   border-radius: 50px;
   margin: 100px 0 0 80px;
 }
 
-.containerbranding {
+.parrafoproyecto {
+  width: 60%;
+  margin-left: 80px;
+  margin-top: 20px;
+  font-size: 18px;
+}
+
+.containerpackaging {
   width: 75%;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -215,44 +230,40 @@
   padding: 40px 0 0 80px;
   gap: 15px;
 }
-.containerbranding .branding1 img {
+.containerpackaging .packaging1 img {
   width: 100%;
   text-align: center;
 }
-.containerbranding .branding1:hover {
+.containerpackaging .packaging1:hover {
   transform: scale(1.02);
 }
-.containerbranding .branding2 img {
+.containerpackaging .packaging2 img {
   width: 100%;
   text-align: center;
 }
-.containerbranding .branding2:hover {
+.containerpackaging .packaging2:hover {
   transform: scale(1.02);
 }
-.containerbranding .branding3 img {
+.containerpackaging .packaging3 img {
   width: 100%;
   text-align: center;
 }
-.containerbranding .branding3:hover {
+.containerpackaging .packaging3:hover {
   transform: scale(1.02);
 }
-.containerbranding .branding4 img {
+.containerpackaging .packaging4 img {
   width: 100%;
   text-align: center;
 }
-.containerbranding .branding4:hover {
+.containerpackaging .packaging4:hover {
   transform: scale(1.02);
 }
-.containerbranding .branding5 img {
+.containerpackaging .packaging5 img {
   width: 100%;
   text-align: center;
 }
-.containerbranding .branding5:hover {
+.containerpackaging .packaging5:hover {
   transform: scale(1.02);
-}
-
-.fondo3 {
-  background-color: black;
 }
 
 .merch {
@@ -322,6 +333,10 @@
   font-size: 20px;
 }
 
+p {
+  color: white;
+}
+
 button:hover {
   transform: scale(1.03);
 }
@@ -354,7 +369,17 @@ button:hover {
   .columna3historia {
     display: none;
   }
-  .containerbranding {
+  .subtituloproyecto {
+    color: white;
+    font-size: 35px;
+  }
+  .parrafoproyecto {
+    width: 60%;
+    margin-left: 80px;
+    margin-top: 20px;
+    font-size: 13px;
+  }
+  .containerpackaging {
     grid-template-columns: 1fr;
   }
   .merch {
