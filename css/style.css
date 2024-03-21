@@ -61,7 +61,7 @@
 .desk ul li a {
   color: white;
   text-decoration: none;
-  font-size: 43px;
+  font-size: 36px;
   transition: 0.5s;
 }
 .desk ul li a:hover {
@@ -72,7 +72,7 @@
 }
 .desk .subpaginas a {
   text-decoration: none;
-  font-size: 30px;
+  font-size: 25px;
   left: 40px;
 }
 .desk .subpagina:hover {
@@ -210,9 +210,9 @@
 
 .subtituloproyecto {
   color: white;
-  font-size: 40px;
+  font-size: 50px;
   border-radius: 50px;
-  margin: 100px 0 0 80px;
+  margin: 30px 0 0 80px;
 }
 
 .parrafoproyecto {
@@ -369,13 +369,23 @@ button:hover {
   .columna3historia {
     display: none;
   }
+  .containerpackaging {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto;
+    padding: 40px;
+    gap: 15px;
+  }
   .subtituloproyecto {
     color: white;
     font-size: 35px;
+    margin-left: 60px;
+    margin-top: 0;
   }
   .parrafoproyecto {
     width: 60%;
-    margin-left: 80px;
+    margin-left: 60px;
     margin-top: 20px;
     font-size: 13px;
   }
