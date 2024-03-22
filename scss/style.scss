@@ -183,7 +183,8 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	max-width: 1300px;
 	display: flex;
 	gap: 20px;
-	padding: 40px 80px 0 80px;
+	// padding: 40px 80px 20px 80px;
+	padding: 40px;
 }
 
 .columna1historia {
@@ -242,7 +243,8 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
 	grid-template-rows: auto;
-	padding: 40px 0 0 80px;
+	// padding: 40px 0 0 80px;
+	padding: 40px;
 	gap: 15px;
 
 	.packaging1 {
@@ -363,8 +365,29 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	.posavasos {
 		background-image: url(../img/Posavasos\ desordenado.webp);
 		background-position: top;
+	}
+
+	.lanyard {
+		background-image: url(../img/Lanyard.webp);
+		background-position: center;
 	
 	}
+	.stickers {
+		background-image: url(../img/Posavasos\ desordenado.webp);
+		background-position: center;
+	
+	}
+	.pines {
+		background-image: url(../img/Pines.webp);
+		background-position: center;
+	
+	}
+	.pulseras {
+		background-image: url(../img/Pulseras.webp);
+		background-position: center;
+	
+	}
+
 }
 
 .formulariocompleto {
@@ -391,6 +414,16 @@ button:hover{
 	color: map-get($colores, color-primario);
 	border-radius: 10px;
 	margin: 70px 0 30px 0;
+}
+.btn-secondary{
+	border: none;
+	background: map-get($colores, color-active);
+	&:hover {
+		background: map-get($colores , color-active);
+	}
+	&:active {
+		background: map-get($colores , color-active);
+	}
 }
 .contacto-letragordita {
 	margin-top: 50px;

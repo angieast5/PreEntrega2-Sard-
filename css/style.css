@@ -167,7 +167,7 @@
   max-width: 1300px;
   display: flex;
   gap: 20px;
-  padding: 40px 80px 0 80px;
+  padding: 40px;
 }
 
 .columna1historia {
@@ -227,7 +227,7 @@
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   grid-template-rows: auto;
-  padding: 40px 0 0 80px;
+  padding: 40px;
   gap: 15px;
 }
 .containerpackaging .packaging1 img {
@@ -321,6 +321,22 @@
   background-image: url(../img/Posavasos\ desordenado.webp);
   background-position: top;
 }
+.merch .lanyard {
+  background-image: url(../img/Lanyard.webp);
+  background-position: center;
+}
+.merch .stickers {
+  background-image: url(../img/Posavasos\ desordenado.webp);
+  background-position: center;
+}
+.merch .pines {
+  background-image: url(../img/Pines.webp);
+  background-position: center;
+}
+.merch .pulseras {
+  background-image: url(../img/Pulseras.webp);
+  background-position: center;
+}
 
 .formulariocompleto {
   max-width: 900px;
@@ -346,6 +362,17 @@ button:hover {
   color: white;
   border-radius: 10px;
   margin: 70px 0 30px 0;
+}
+
+.btn-secondary {
+  border: none;
+  background: rgb(255, 22, 61);
+}
+.btn-secondary:hover {
+  background: rgb(255, 22, 61);
+}
+.btn-secondary:active {
+  background: rgb(255, 22, 61);
 }
 
 .contacto-letragordita {
