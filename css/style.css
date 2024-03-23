@@ -1,4 +1,15 @@
 @import "https://fonts.googleapis.com/css2?family=Lexend+Exa:wght@600;900&display=swap";
+@keyframes degradado {
+  0% {
+    background-position: 0 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0 50%;
+  }
+}
 * {
   margin: 0;
   padding: 0;
@@ -199,13 +210,16 @@
 }
 .foto1 h2 {
   color: white;
+  font-size: 30px;
 }
 .foto1 .texthistoria {
   color: white;
 }
 
 .fondo {
-  background-color: black;
+  background-image: linear-gradient(135deg, black, rgb(19, 0, 0), rgb(17, 16, 16));
+  background-size: 400%;
+  animation: degradado 10s infinite;
 }
 
 .subtituloproyecto {
@@ -292,7 +306,6 @@
 
 .merch {
   width: 75%;
-  background-color: rgba(0, 0, 0, 0.836);
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
@@ -350,7 +363,7 @@
   background-position: center;
 }
 .merch .stickers {
-  background-image: url(../img/Posavasos\ desordenado.webp);
+  background-image: url(../img/Stickers\ sueltos.webp);
   background-position: center;
 }
 .merch .pines {
@@ -365,7 +378,7 @@
 .formulariocompleto {
   max-width: 900px;
   padding-top: 20px;
-  padding: 35px 60px 0 80px;
+  padding: 0 80px;
 }
 .formulariocompleto a {
   text-decoration: none;
@@ -385,7 +398,7 @@ button:hover {
   font-size: 50px;
   color: white;
   border-radius: 10px;
-  margin: 70px 0 30px 0;
+  padding: 30px 0 20px 0;
 }
 
 .btn-secondary {
@@ -406,7 +419,7 @@ button:hover {
 
 @media screen and (max-width: 980px) {
   .logo img {
-    width: 40%;
+    width: 50%;
   }
   .desk {
     display: none;
@@ -432,8 +445,9 @@ button:hover {
   }
   .parrafoproyecto {
     width: 100%;
-    font-size: 13px;
+    font-size: 16px;
     padding: 0 30px;
+    margin: 0;
   }
   .containerpackaging {
     width: 100%;
@@ -458,13 +472,13 @@ button:hover {
     font-size: 27px;
   }
   .formulariocompleto {
-    padding: 35px 60px 0 50px;
+    padding: 0 50px;
   }
   .colaboremos-formulario {
-    font-size: 30px;
+    font-size: 35px;
   }
   .contacto-letragordita a {
-    font-size: 13px;
+    font-size: 15px;
   }
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {

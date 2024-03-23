@@ -30,10 +30,12 @@ $font-family_1: 'Lexend Exa', sans-serif;
 
 .redes-sociales {
 	padding-right: 40px;
+
 	a {
 		color: map-get($colores, color-primario);
 		display: block;
 		padding-bottom: 15px;
+
 		&:hover {
 			color: map-get($colores, color-active);
 			transition: 0.5s;
@@ -60,25 +62,29 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		bottom: 8%;
 		right: 4%;
 		padding: 10px 30px 10px 30px;
+
 		li {
 			list-style: none;
 			display: block;
 			width: auto;
+
 			a {
 				color: map-get($colores, color-primario);
 				text-decoration: none;
 				font-size: 36px;
 				transition: 0.5s;
-		
+
 				&:hover {
 					color: map-get($colores, color-click);
 				}
-				&.active{
+
+				&.active {
 					color: map-get($colores, color-active);
 				}
 			}
 		}
 	}
+
 	.subpaginas {
 		a {
 			text-decoration: none;
@@ -87,8 +93,9 @@ $font-family_1: 'Lexend Exa', sans-serif;
 
 		}
 	}
-	.subpagina:hover{
-		translate:(30px);
+
+	.subpagina:hover {
+		translate: (30px);
 		transition: 0.5s;
 	}
 
@@ -99,46 +106,55 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	bottom: 60px;
 	padding: 0 60px 0 60px;
 	width: 100%;
+
 	ul {
 		display: block;
 		margin: 0;
 		padding: 0;
+
 		li {
 			list-style: none;
 			text-align: center;
 		}
 	}
+
 	.subpaginasmobile {
 		display: flex;
 		justify-content: space-evenly;
 		text-align: center;
+
 		a {
 			font-size: 16px;
 		}
 	}
+
 	a {
 		color: map-get($colores, color-primario);
 		text-decoration: none;
 		font-size: 25px;
 		transition: 0.5s;
+
 		&:hover {
 			color: map-get($colores, color-click);
 		}
-		&.active{
+
+		&.active {
 			color: map-get($colores, color-active);
 		}
 	}
 }
 
 .navbar-toggler {
-	
+
 	width: 100%;
 	max-width: 100%;
 	margin: 0 auto;
 	border: none;
+
 	&:focus {
 		box-shadow: none;
 	}
+
 	&:focus-visible {
 		background-color: map-get($colores , color-click);
 	}
@@ -146,7 +162,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 
 .bg-black {
 	@include margin-border(10px, 10px, 90%);
-	
+
 }
 
 .bg-dark {
@@ -178,6 +194,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		}
 	}
 }
+
 
 .containermihistoria {
 	width: 75%;
@@ -212,6 +229,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 
 	h2 {
 		color: map-get($colores, color-primario);
+		font-size: 30px;
 	}
 
 	.texthistoria {
@@ -220,7 +238,9 @@ $font-family_1: 'Lexend Exa', sans-serif;
 }
 
 .fondo {
-	background-color: map-get($colores, color-fondo);
+	background-image: linear-gradient(135deg,black,rgb(19, 0, 0),rgb(17, 16, 16),);
+    background-size: 400%;
+	animation: degradado 10s infinite;
 }
 
 .subtituloproyecto {
@@ -230,18 +250,18 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	padding: 30px 0 0 50px;
 }
 
-.parrafoproyecto{
+.parrafoproyecto {
 	width: 60%;
-    font-size: 18px;
+	font-size: 18px;
 	padding: 15px 0 0 50px;
 }
 
 .containerpackaging {
 	width: 75%;
 	display: grid;
-	grid-template-areas: 
-	"packaging1 packaging2"
-	"packaging3 packaging3"; 
+	grid-template-areas:
+		"packaging1 packaging2"
+		"packaging3 packaging3";
 	gap: 15px;
 	padding: 50px;
 
@@ -261,6 +281,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 			width: 100%;
 			align-items: center;
 		}
+
 		&:hover {
 			transform: scale(1.02);
 		}
@@ -271,9 +292,11 @@ $font-family_1: 'Lexend Exa', sans-serif;
 			width: 100%;
 			align-items: center;
 		}
-		&.packaging3{
+
+		&.packaging3 {
 			grid-area: packaging3;
 		}
+
 		&:hover {
 			transform: scale(1.02);
 		}
@@ -281,7 +304,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 
 }
 
-.containerredessociales{
+.containerredessociales {
 	width: 75%;
 	display: grid;
 	grid-template-columns: repeat(2, 1fr);
@@ -289,7 +312,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	gap: 15px;
 	padding: 50px;
 
-	.redessociales1{
+	.redessociales1 {
 		img {
 			width: 100%;
 			align-items: center;
@@ -299,7 +322,8 @@ $font-family_1: 'Lexend Exa', sans-serif;
 			transform: scale(1.02);
 		}
 	}
-	.redessociales2{
+
+	.redessociales2 {
 		img {
 			width: 100%;
 			align-items: center;
@@ -309,7 +333,8 @@ $font-family_1: 'Lexend Exa', sans-serif;
 			transform: scale(1.02);
 		}
 	}
-	.redessociales3{
+
+	.redessociales3 {
 		img {
 			width: 100%;
 			align-items: center;
@@ -319,7 +344,8 @@ $font-family_1: 'Lexend Exa', sans-serif;
 			transform: scale(1.02);
 		}
 	}
-	.redessociales4{
+
+	.redessociales4 {
 		img {
 			width: 100%;
 			align-items: center;
@@ -333,7 +359,6 @@ $font-family_1: 'Lexend Exa', sans-serif;
 
 .merch {
 	width: 75%;
-	background-color: map-get($colores, color-inicio);
 	display: grid;
 	grid-template-columns: repeat(3, 1fr);
 	grid-template-rows: auto;
@@ -346,6 +371,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		background-color: map-get($colores, color-primario);
 		text-align: start;
 		border-radius: 15px;
+
 		.titulo {
 			padding: 0;
 			margin: 0;
@@ -355,7 +381,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 			padding: 15px 0 0 20px;
 			font-weight: bold;
 		}
-	
+
 		.precio {
 			padding: 0;
 			margin: 0;
@@ -371,23 +397,24 @@ $font-family_1: 'Lexend Exa', sans-serif;
 		width: 100%;
 		border-radius: 15px 15px 0 0;
 	}
+
 	.teclado {
 		background-image: url(../img/Sticker\ de\ Teclado.webp);
 	}
-	
+
 	.separador {
 		background-image: url(../img/Separadores.webp);
 	}
-	
+
 	.libretas {
 		background-image: url(../img/Libretas.webp);
 	}
-	
+
 	.tazas {
 		background-image: url(../img/Tazas.webp);
 		background-position: top;
 	}
-	
+
 	.posavasos {
 		background-image: url(../img/Posavasos\ desordenado.webp);
 		background-position: top;
@@ -396,22 +423,25 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	.lanyard {
 		background-image: url(../img/Lanyard.webp);
 		background-position: center;
-	
+
 	}
+
 	.stickers {
-		background-image: url(../img/Posavasos\ desordenado.webp);
+		background-image: url(../img/Stickers\ sueltos.webp);
 		background-position: center;
-	
+
 	}
+
 	.pines {
 		background-image: url(../img/Pines.webp);
 		background-position: center;
-	
+
 	}
+
 	.pulseras {
 		background-image: url(../img/Pulseras.webp);
 		background-position: center;
-	
+
 	}
 
 }
@@ -419,7 +449,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 .formulariocompleto {
 	max-width: 900px;
 	padding-top: 20px;
-	padding: 35px 60px 0 80px;
+	padding: 0 80px;
 
 	a {
 		text-decoration: none;
@@ -428,29 +458,34 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	}
 }
 
-p{
+p {
 	color: map-get($colores, color-primario);
 }
 
-button:hover{
+button:hover {
 	transform: scale(1.03);
 }
+
 .colaboremos-formulario {
 	font-size: 50px;
 	color: map-get($colores, color-primario);
 	border-radius: 10px;
-	margin: 70px 0 30px 0;
+	padding: 30px 0 20px 0;
 }
-.btn-secondary{
+
+.btn-secondary {
 	border: none;
 	background: map-get($colores, color-active);
+
 	&:hover {
 		background: map-get($colores , color-active);
 	}
+
 	&:active {
 		background: map-get($colores , color-active);
 	}
 }
+
 .contacto-letragordita {
 	margin-top: 50px;
 	padding-bottom: 50px;
@@ -461,7 +496,7 @@ button:hover{
 @media screen and (max-width:980px) {
 	.logo {
 		img {
-			width: 40%;
+			width: 50%;
 		}
 	}
 
@@ -472,11 +507,13 @@ button:hover{
 	.bajada {
 		font-size: 16px;
 	}
-	.containermihistoria{
+
+	.containermihistoria {
 		width: 100%;
 		padding: 40px;
 		gap: 15px;
 	}
+
 	.columna1historia {
 		display: none;
 	}
@@ -484,17 +521,20 @@ button:hover{
 	.columna3historia {
 		display: none;
 	}
+
 	.subtituloproyecto {
 		color: map-get($colores, color-primario);
 		font-size: 35px;
 		padding: 0 30px;
 	}
-	
-	.parrafoproyecto{
+
+	.parrafoproyecto {
 		width: 100%;
-		font-size: 13px;
+		font-size: 16px;
 		padding: 0 30px;
+		margin: 0
 	}
+
 	.containerpackaging {
 		width: 100%;
 		display: flex;
@@ -502,30 +542,36 @@ button:hover{
 		gap: 15px;
 		padding: 30px;
 	}
-	.containerredessociales{
+
+	.containerredessociales {
 		width: 100%;
 		display: flex;
 		flex-direction: column;
 		gap: 15px;
 		padding: 30px;
 	}
+
 	.merch {
 		width: 100%;
 		padding: 40px;
 		grid-template-columns: repeat(1, 1fr);
 	}
+
 	.titulo {
 		font-size: 27px;
 	}
+
 	.formulariocompleto {
-		padding: 35px 60px 0 50px;
+		padding: 0 50px;
 	}
+
 	.colaboremos-formulario {
-		font-size: 30px;
+		font-size: 35px;
 	}
+
 	.contacto-letragordita {
 		a {
-			font-size: 13px;
+			font-size: 15px;
 		}
 	}
 }
@@ -549,5 +595,4 @@ button:hover{
 	.columna2historia {
 		display: none;
 	}
-
 }
