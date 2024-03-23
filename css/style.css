@@ -164,10 +164,10 @@
 }
 
 .containermihistoria {
-  max-width: 1300px;
+  width: 75%;
   display: flex;
   gap: 20px;
-  padding: 40px;
+  padding: 50px;
 }
 
 .columna1historia {
@@ -212,68 +212,92 @@
   color: white;
   font-size: 50px;
   border-radius: 50px;
-  margin: 30px 0 0 80px;
+  padding: 30px 0 0 50px;
 }
 
 .parrafoproyecto {
   width: 60%;
-  margin-left: 80px;
-  margin-top: 20px;
   font-size: 18px;
+  padding: 15px 0 0 50px;
 }
 
 .containerpackaging {
   width: 75%;
   display: grid;
-  grid-template-columns: repeat(2, 1fr);
-  grid-template-rows: auto;
-  padding: 40px;
+  grid-template-areas: "packaging1 packaging2" "packaging3 packaging3";
   gap: 15px;
+  padding: 50px;
 }
 .containerpackaging .packaging1 img {
   width: 100%;
-  text-align: center;
+  align-items: center;
 }
 .containerpackaging .packaging1:hover {
   transform: scale(1.02);
 }
-.containerpackaging .packaging2 img {
+.containerpackaging .packaging2 video {
   width: 100%;
-  text-align: center;
+  align-items: center;
 }
 .containerpackaging .packaging2:hover {
   transform: scale(1.02);
 }
 .containerpackaging .packaging3 img {
   width: 100%;
-  text-align: center;
+  align-items: center;
+}
+.containerpackaging .packaging3.packaging3 {
+  grid-area: packaging3;
 }
 .containerpackaging .packaging3:hover {
   transform: scale(1.02);
 }
-.containerpackaging .packaging4 img {
-  width: 100%;
-  text-align: center;
+
+.containerredessociales {
+  width: 75%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: auto;
+  gap: 15px;
+  padding: 50px;
 }
-.containerpackaging .packaging4:hover {
+.containerredessociales .redessociales1 img {
+  width: 100%;
+  align-items: center;
+}
+.containerredessociales .redessociales1:hover {
   transform: scale(1.02);
 }
-.containerpackaging .packaging5 img {
+.containerredessociales .redessociales2 img {
   width: 100%;
-  text-align: center;
+  align-items: center;
 }
-.containerpackaging .packaging5:hover {
+.containerredessociales .redessociales2:hover {
+  transform: scale(1.02);
+}
+.containerredessociales .redessociales3 img {
+  width: 100%;
+  align-items: center;
+}
+.containerredessociales .redessociales3:hover {
+  transform: scale(1.02);
+}
+.containerredessociales .redessociales4 img {
+  width: 100%;
+  align-items: center;
+}
+.containerredessociales .redessociales4:hover {
   transform: scale(1.02);
 }
 
 .merch {
-  width: 70%;
+  width: 75%;
   background-color: rgba(0, 0, 0, 0.836);
-  margin: 30px 0 0 50px;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
   grid-template-rows: auto;
   gap: 40px;
+  padding: 50px;
 }
 .merch .productomerch {
   width: 100%;
@@ -390,36 +414,44 @@ button:hover {
   .bajada {
     font-size: 16px;
   }
+  .containermihistoria {
+    width: 100%;
+    padding: 40px;
+    gap: 15px;
+  }
   .columna1historia {
     display: none;
   }
   .columna3historia {
     display: none;
   }
-  .containerpackaging {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    grid-template-rows: auto;
-    padding: 40px;
-    gap: 15px;
-  }
   .subtituloproyecto {
     color: white;
     font-size: 35px;
-    margin-left: 60px;
-    margin-top: 0;
+    padding: 0 30px;
   }
   .parrafoproyecto {
-    width: 60%;
-    margin-left: 60px;
-    margin-top: 20px;
+    width: 100%;
     font-size: 13px;
+    padding: 0 30px;
   }
   .containerpackaging {
-    grid-template-columns: 1fr;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
+  }
+  .containerredessociales {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 30px;
   }
   .merch {
+    width: 100%;
+    padding: 40px;
     grid-template-columns: repeat(1, 1fr);
   }
   .titulo {
@@ -437,6 +469,7 @@ button:hover {
 }
 @media screen and (min-width: 767px) and (max-width: 1024px) {
   .merch {
+    width: 75%;
     grid-template-columns: repeat(2, 1fr);
   }
   .merch .titulo {
