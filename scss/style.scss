@@ -47,7 +47,7 @@ $font-family_1: 'Lexend Exa', sans-serif;
 	width: 100%;
 	height: auto;
 	color: map-get($colores, color-primario);
-	text-shadow: map-get($colores, color-fondo);
+	text-shadow: 1px 1px 4px grey;
 	font-size: 30px;
 	padding: 20px 0 0 50px;
 	display: block;
